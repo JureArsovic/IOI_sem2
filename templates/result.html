@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Movie Poster Similarity - Result</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Similar Movie Poster</h1>
+        <img src="{{ result_image }}" alt="Most Similar Poster">
+        <p>Movie Title: {{ result_title }}</p>
+        <p>Similarity Score: {{ result_score }}</p>
+        <a href="/">Upload Another Picture</a>
+    </div>
+</body>
+</html>
